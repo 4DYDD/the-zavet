@@ -6,17 +6,75 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* 🌙 Primary Colors */
+  --color-primary: #3a7ca5;
+  --color-primary-rgba: rgba(58, 124, 165, 1);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-light: #a3cbe3;
+  --color-primary-light-rgba: rgba(163, 203, 227, 1);
+
+  --color-primary-dark: #1f4e79;
+  --color-primary-dark-rgba: rgba(31, 78, 121, 1);
+
+  /* 🧊 Secondary Colors */
+  --color-secondary: #f4d06f;
+  --color-secondary-rgba: rgba(244, 208, 111, 1);
+
+  --color-secondary-light: #fbe8a6;
+  --color-secondary-light-rgba: rgba(251, 232, 166, 1);
+
+  --color-secondary-dark: #c9a63d;
+  --color-secondary-dark-rgba: rgba(201, 166, 61, 1);
+
+  /* 📄 Text Colors */
+  --color-text-primary: #1f4e79;
+  --color-text-primary-rgba: rgba(31, 78, 121, 1);
+
+  --color-text-secondary: #3a7ca5;
+  --color-text-secondary-rgba: rgba(58, 124, 165, 1);
+
+  --color-text-light: #ffffff;
+  --color-text-light-rgba: rgba(255, 255, 255, 1);
+
+  --color-text-muted: #6c7a89;
+  --color-text-muted-rgba: rgba(108, 122, 137, 1);
+
+  /* 🧱 Background Colors */
+  --color-bg-main: #dceeff;
+  --color-bg-main-rgba: rgba(220, 238, 255, 1);
+
+  --color-bg-light: #f5f9fc;
+  --color-bg-light-rgba: rgba(245, 249, 252, 1);
+
+  --color-bg-dark: #1f4e79;
+  --color-bg-dark-rgba: rgba(31, 78, 121, 1);
+
+  /* 📏 Border & Divider */
+  --color-border-soft: #a3cbe3;
+  --color-border-soft-rgba: rgba(163, 203, 227, 1);
+
+  --color-border-strong: #1f4e79;
+  --color-border-strong-rgba: rgba(31, 78, 121, 1);
+
+  --color-divider-muted: #d0d8e0;
+  --color-divider-muted-rgba: rgba(208, 216, 224, 1);
+
+  /* ✨ Interactive States */
+  --color-hover-primary: #2e6a8f;
+  --color-hover-primary-rgba: rgba(46, 106, 143, 1);
+
+  --color-hover-secondary: #eac04f;
+  --color-hover-secondary-rgba: rgba(234, 192, 79, 1);
+
+  --color-focus-ring: rgba(163, 203, 227, 0.6);
+
+  /* 🔧 Gradient & Shadow */
+  --gradient-islami: linear-gradient(135deg, #dceeff, #a3cbe3);
+  --shadow-soft: 0 4px 12px rgba(58, 124, 165, 0.1);
+
+  /* 🔤 Typography */
+  --font-heading: var(--font-alexandria);
+  --font-body: var(--font-harmattan);
 }
 
 body {
