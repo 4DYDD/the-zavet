@@ -132,6 +132,25 @@ Website yearbook untuk kelas Zavetoria (22 boys, alumni MANPK Martapura - sekola
 - Always communicate clearly and without hesitation
 - Consider Islamic/respectful context in all design decisions
 
+## Logging Guidelines
+
+**📝 IMPORTANT - Development Logging Protocol:**
+
+- **ALWAYS create development logs** for significant changes/sessions
+- **File naming format**: `LOG_TYPE_YYYY-MM-DD_HH-MM.md`
+- **Examples**:
+  - `DEVELOPMENT_LOG_2025-09-02_06-00.md`
+  - `BUILD_FIX_LOG_2025-09-01_18-10.md`
+  - `FEATURE_LOG_2025-09-02_14-30.md`
+- **Content requirements**:
+  - Date & time header
+  - Session overview
+  - Technical details
+  - Files modified/created
+  - Next steps
+- **Location**: Root project directory
+- **Purpose**: Track development progress, decisions, and changes
+
 ## Recent Changes Log
 
 1. ✅ **Deleted members page** - converted to SPA

@@ -1,6 +1,7 @@
 import { Harmattan, Alexandria } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
+import { getBaseUrl } from "../lib/utils";
 
 const harmattan = Harmattan({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ const alexandria = Alexandria({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL(getBaseUrl()),
   title: "Zavetoria Yearbook - Laksana Kemenangan",
   description:
     "Website yearbook resmi kelas Zavetoria, 22 putra alumni MANPK Martapura. Kumpulan kenang-kenangan, sejarah, dan perjalanan keluarga tak sedarah yang bermakna 'Laksana Kemenangan'. Muhammadiyah, persaudaraan, dan masa depan gemilang.",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     title: "Zavetoria Yearbook - Laksana Kemenangan",
     description:
       "Jelajahi kenang-kenangan indah 22 putra Zavetoria alumni MANPK Martapura. Sebuah perjalanan persaudaraan yang bermakna 'Laksana Kemenangan' dalam tradisi Muhammadiyah.",
-    url: "https://zavetoria-yearbook.vercel.app",
+    url: getBaseUrl(),
     siteName: "Zavetoria Yearbook",
     images: [
       {
