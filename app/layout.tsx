@@ -81,7 +81,10 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body
-        className={`${harmattan.className} ${harmattan.variable} ${alexandria.variable} antialiased bg-[color:var(--color-bg-light)] text-[color:var(--color-text-primary)] text-[5rem] font-harmattan`}
+        className={`
+          ${harmattan.className} ${harmattan.variable} ${alexandria.variable} 
+          antialiased bg-light text-text_primary text-[5rem] font-harmattan
+        `}
       >
         <main className="!text-[1em]">{children}</main>
       </body>

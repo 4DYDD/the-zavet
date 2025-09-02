@@ -8,66 +8,37 @@
 @theme inline {
   /* 🌙 Primary Colors */
   --color-primary: #3a7ca5; /* Biru Tua */
-  --color-primary-rgba: rgba(58, 124, 165, 1);
-
-  --color-primary-light: #dceeff; /* Biru Muda */
-  --color-primary-light-rgba: rgba(220, 238, 255, 1);
-
-  --color-primary-dark: #1f4e79; /* Biru Tua Lebih Gelap */
-  --color-primary-dark-rgba: rgba(31, 78, 121, 1);
+  --color-primary_light: #dceeff; /* Biru Muda */
+  --color-primary_dark: #1f4e79; /* Biru Tua Lebih Gelap */
 
   /* 🌸 Tertiary Accent (Pink) */
   --color-tertiary: #f7a1c4; /* Pink Lembut */
-  --color-tertiary-rgba: rgba(247, 161, 196, 1);
-
-  --color-tertiary-light: #fbd3e6; /* Pink Muda */
-  --color-tertiary-light-rgba: rgba(251, 211, 230, 1);
-
-  --color-tertiary-dark: #d97aa8; /* Pink Tua */
-  --color-tertiary-dark-rgba: rgba(217, 122, 168, 1);
+  --color-tertiary_light: #fbd3e6; /* Pink Muda */
+  --color-tertiary_dark: #d97aa8; /* Pink Tua */
 
   /* 📄 Text Colors */
-  --color-text-primary: #1f4e79;
-  --color-text-primary-rgba: rgba(31, 78, 121, 1);
-
-  --color-text-light: #ffffff;
-  --color-text-light-rgba: rgba(255, 255, 255, 1);
-
-  --color-text-muted: #6c7a89;
-  --color-text-muted-rgba: rgba(108, 122, 137, 1);
+  --color-text_primary: #1f4e79;
+  --color-text_light: #ffffff;
+  --color-text_muted: #6c7a89;
 
   /* 🧱 Background Colors */
-  --color-bg-main: #dceeff;
-  --color-bg-main-rgba: rgba(220, 238, 255, 1);
-
-  --color-bg-light: #f5f9fc;
-  --color-bg-light-rgba: rgba(245, 249, 252, 1);
-
-  --color-bg-dark: #1f4e79;
-  --color-bg-dark-rgba: rgba(31, 78, 121, 1);
+  --color-main: #dceeff;
+  --color-light: #f5f9fc;
+  --color-dark: #1f4e79;
 
   /* 📏 Border & Divider */
-  --color-border-soft: #a3cbe3;
-  --color-border-soft-rgba: rgba(163, 203, 227, 1);
-
-  --color-border-strong: #1f4e79;
-  --color-border-strong-rgba: rgba(31, 78, 121, 1);
-
-  --color-divider-muted: #d0d8e0;
-  --color-divider-muted-rgba: rgba(208, 216, 224, 1);
+  --color-border_soft: #a3cbe3;
+  --color-border_strong: #1f4e79;
+  --color-divider: #d0d8e0;
 
   /* ✨ Interactive States */
-  --color-hover-primary: #2e6a8f;
-  --color-hover-primary-rgba: rgba(46, 106, 143, 1);
-
-  --color-hover-tertiary: #e88ab5;
-  --color-hover-tertiary-rgba: rgba(232, 138, 181, 1);
-
-  --color-focus-ring: rgba(163, 203, 227, 0.6);
+  --color-hover_primary: #2e6a8f;
+  --color-hover_tertiary: #e88ab5;
+  --color-focus_ring: rgba(163, 203, 227, 0.6);
 
   /* 🔧 Gradient & Shadow */
-  --gradient-hero: linear-gradient(135deg, #dceeff, #a3cbe3);
-  --shadow-soft: 0 4px 12px rgba(58, 124, 165, 0.1);
+  --color-gradient_hero: linear-gradient(135deg, #dceeff, #a3cbe3);
+  --color-shadow_soft: 0 4px 12px rgba(58, 124, 165, 0.1);
 
   /* 🔤 Typography */
   --font-heading: var(--font-alexandria);

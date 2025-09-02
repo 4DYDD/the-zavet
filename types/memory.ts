@@ -52,7 +52,25 @@ export interface Message {
   date?: string;
 }
 
-// Prayer/Doa types (for protected feature)
+// Prayer/Doa types (updated for front-end collection)
+export interface PrayerCollection {
+  id: string;
+  title: string;
+  description: string; // Combined Arabic + translation
+  category: PrayerCategory;
+  contributor: string; // Default: "Orang Baik"
+  createdAt: string;
+  featured?: boolean;
+}
+
+export type PrayerCategory =
+  | "friendship" // Doa persahabatan, ikatan Zavetoria
+  | "success" // Doa kesuksesan, masa depan gemilang
+  | "reunion" // Doa pertemuan, reuni alumni
+  | "blessing" // Doa umum, berkah untuk semua
+  | "guidance"; // Doa petunjuk, arahan hidup
+
+// Legacy Prayer interface (for reference)
 export interface Prayer {
   id: string;
   author: string;
