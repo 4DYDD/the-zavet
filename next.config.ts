@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
         port: "3000",
         pathname: "/**",
       },
+      // Future: Add Google Drive or other image hosting domains
+      // {
+      //   protocol: "https",
+      //   hostname: "drive.google.com",
+      //   pathname: "/**",
+      // },
     ],
   },
 };
