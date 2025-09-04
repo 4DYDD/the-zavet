@@ -122,8 +122,8 @@ export const members: Member[] = [
     favoriteMemory: "Masak untuk seluruh kelas di acara farewell",
   },
   {
-    id: "nabil",
-    name: "Nabil",
+    id: "nabiel",
+    name: "Nabiel",
     photo: "/api/placeholder/300/400",
     aspiration: "Fotografer",
     quote: "Setiap momen berharga untuk diabadikan",

@@ -1,11 +1,17 @@
+"use client";
+
+import { motion, AnimatePresence } from "framer-motion";
+import { members } from "../../../data/members";
+import MemberCard from "./MemberCard";
+
 export default function MembersSection() {
   return (
     <section
       className={`
         min-h-screen
-        bg-main
+        bg-white
         py-16 md:py-24
-        px-4 md:px-8
+        px-8
       `}
     >
       <div
@@ -14,11 +20,15 @@ export default function MembersSection() {
           mx-auto
         `}
       >
-        <div
+        {/* Header Section */}
+        <motion.div
           className={`
             text-center
-            mb-12
+            mb-12 md:mb-16
           `}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           <h2
             className={`
@@ -37,35 +47,66 @@ export default function MembersSection() {
               font-[family-name:var(--font-body)]
               text-text_primary
               opacity-80
+              mb-2
             `}
           >
             22 Putra Alumni MANPK Martapura
           </p>
-        </div>
-
-        {/* Member grid will be implemented here */}
-        <div
-          className={`
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-            gap-6 md:gap-8
-          `}
-        >
-          {/* Member cards will be mapped here */}
           <div
             className={`
-              bg-light
-              rounded-lg
-              p-6
-              text-center
-              h-64
-              flex items-center justify-center
-              text-text_primary
-              opacity-50
+              w-24
+              h-1
+              bg-gradient-to-r
+              from-primary
+              via-tertiary
+              to-primary
+              mx-auto
+              rounded-full
+            `}
+          />
+        </motion.div>
+
+        {/* Members Grid */}
+        <AnimatePresence>
+          <div
+            className={`
+              grid 
+              grid-cols-1 
+              md:grid-cols-2 
+              xl:grid-cols-4
+              gap-6 md:gap-6
+              items-center
+              lg:px-20 xl:px-0
             `}
           >
-            Member Cards Coming Soon...
+            {members.map((member, index) => (
+              <MemberCard key={member.id} member={member} index={index} />
+            ))}
           </div>
-        </div>
+        </AnimatePresence>
+
+        {/* Footer Info */}
+        <motion.div
+          className={`
+            text-center
+            mt-12 md:mt-16
+          `}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <p
+            className={`
+              text-sm md:text-base
+              font-[family-name:var(--font-body)]
+              text-text_primary
+              opacity-60
+            `}
+          >
+            Keluarga tak sedarah yang telah berpencar menempuh pendidikan
+            masing-masing
+          </p>
+        </motion.div>
       </div>
     </section>
   );

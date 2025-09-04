@@ -3,7 +3,7 @@ export default function HeroSection() {
     <section
       className={`
         min-h-screen
-        bg-main
+        bg-white
         flex items-center justify-center
         relative overflow-hidden
       `}

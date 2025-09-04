@@ -85,6 +85,90 @@ Website yearbook untuk kelas Zavetoria (22 boys, alumni MANPK Martapura - sekola
 - **Responsive**: Mobile-first, then tablet, then desktop
 - **Color Usage**: ALWAYS use CSS variables, never hardcoded hex colors
 
+## 🚨 **CRITICAL - TAILWIND CSS WRITING RULES**
+
+**⚡ MANDATORY STYLING GUIDELINES - ALWAYS FOLLOW:**
+
+### **1. Same-Effect Classes (Single Line)**
+
+```tsx
+// ✅ CORRECT - Size effects in one line
+className="w-24 h-1"
+className="px-3 py-1.5"
+className="mb-5 mt-3"
+
+// ❌ WRONG - Don't split same-effect classes
+className={`
+  w-24
+  h-1
+`}
+```
+
+### **2. Responsive Classes (Single Line)**
+
+```tsx
+// ✅ CORRECT - All responsive breakpoints in one line
+className="text-lg lg:text-[1.8rem] xl:text-xl"
+className="grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
+className="gap-6 md:gap-8 lg:gap-10"
+
+// ❌ WRONG - Don't split responsive classes
+className={`
+  text-lg
+  lg:text-[1.8rem]
+  xl:text-xl
+`}
+```
+
+### **3. Framer Motion Components**
+
+```tsx
+// ✅ CORRECT - No Tailwind transitions for Motion components
+<motion.div
+  className="opacity-100"  // No transition-opacity
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+>
+
+// ❌ WRONG - Redundant transitions
+className="transition-opacity duration-300"  // Conflicts with Motion
+```
+
+### **4. 🎯 TABLET-FIRST RESPONSIVE PRIORITY**
+
+```tsx
+// ✅ CORRECT - Tablet LARGER than Desktop
+className = "text-base lg:text-[1.5rem] xl:text-lg";
+//           mobile     tablet(BIGGER)   desktop(smaller)
+
+className = "gap-6 md:gap-8 lg:gap-10 xl:gap-8";
+//         mobile  tablet(BIGGER)  desktop(smaller)
+
+// ❌ WRONG - Desktop larger than tablet
+className = "text-lg lg:text-xl xl:text-2xl"; // Progressive increase
+```
+
+### **5. Multi-Line Organization (Backtick Format)**
+
+```tsx
+// ✅ CORRECT - Use backticks for different effect categories
+className={`
+  min-h-screen
+  bg-white
+  py-16 md:py-24
+  px-4 md:px-8
+  text-center
+  font-bold
+`}
+```
+
+**💡 WHY TABLET-FIRST?**
+
+- Tablet screens show content too small with traditional mobile-first
+- Desktop already has optimal sizing
+- Better UX on iPad/tablet devices
+- Inspect element testing revealed tablet sizing issues
+
 ## Content Structure - **SIMPLIFIED TO SPA**
 
 ### Homepage (`app/page.tsx`) - **RESET TO EMPTY**
