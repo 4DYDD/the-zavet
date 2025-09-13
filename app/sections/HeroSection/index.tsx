@@ -3,6 +3,7 @@ export default function HeroSection() {
     <section
       style={{ backgroundImage: "url(images/hero_image.jpg)" }}
       className={`
+        snap-center
         h-screen
         bg-cover bg-center
         relative overflow-hidden
@@ -45,7 +46,7 @@ export default function HeroSection() {
             absolute 
             w-full h-full bottom-0 left-0
             pointer-events-none
-            bg-gradient-to-t from-primary/30 to-transparent
+            bg-gradient-to-t from-primary/40 to-transparent
             `}
         />
 
